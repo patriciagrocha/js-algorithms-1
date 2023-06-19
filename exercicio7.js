@@ -10,3 +10,24 @@
  *      remover os elementos do array compreendidos entre os índices inicial e final. Em seguida, retorna o
  *      array atualizado.
  */
+
+let nameList = ['Rosa', 'Laura','Karol','Vera']
+
+const adicionarElemento = (names, name) => {
+    names.push(name);
+    console.log('Array atualizado:',nameList);
+}
+adicionarElemento(nameList,'Joana');
+
+const removerUltimoElemento = (names) => {
+   let nomeRemovido = names.pop();
+   console.log('Elemento removido:', nomeRemovido);
+}
+removerUltimoElemento(nameList);
+
+const removerElementosIntervalo = (names) => {
+    let intervaloRemovido = names.slice(1, names.length - 1);
+    console.log('Intervalo removido:', intervaloRemovido);
+}
+removerElementosIntervalo(nameList);
+
